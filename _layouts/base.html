@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="Jekyll v3.7.3">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/screen.css">
+  <link rel="icon" href="/assets/images/cydenicon.ico">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>CyDen</title>
+<link rel="canonical" href="https://ealcos.github.io/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@everettalcos" />
+<!-- End Jekyll SEO tag -->
+
+  <!--[if lt IE 9]>
+  <script src="/assets/js/html5shiv.min.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- LOGO -->
+
+<body class="wrap">
+	<header id="head" background:"url(/assets/images/nav-bg.gif)">
+	<div class="flexbox">
+    <div class="center-on-mobiles">
+		<h1>
+        <a href="/" class="logo">
+			<span class="sr-only">ealcos</span>
+			<img src="/assets/images/cyden-black.png" width="65" height="65" alt="My Logo">
+			</a>
+		</h1>
+    </div>
+	
+<!-- COMP NAV -->	
+
+    <nav class="main-nav hide-on-mobiles">
+		<ul>
+		<li class="current">
+			<a href="/">Home</a>
+			</li>
+		<li class="">
+			<a href="/methodology">Methodology</a>
+			</li>
+		<li class="">
+			<a href="/resources">Resources</a>
+			</li>
+		<li class="">
+			<a href="/feeds">Feeds</a>
+			</li>
+		<li class="">
+			<a href="/about">About Me</a>
+			</li>
+		</ul>
+
+    </nav>
+	</div>
+  
+<!-- MOBILE NAV -->
+
+	<nav class="mobile-nav show-on-mobiles">
+		<ul>
+		<li class="current">
+			<a href="/">Home</a>
+			</li>
+		<li class="">
+			<a href="/methodology">Methodology</a>
+			</li>
+		<li class="">
+			<a href="/resources">Resources</a>
+			</li>
+		<li class="">
+			<a href="/feeds">Feeds</a>
+			</li>
+		<li class="">
+			<a href="/about">About Me</a>
+			</li>
+		</ul>
+
+	</nav>
+</header>
+
+
+	
+	
+<section>
+  <div class="grid">
+
+	{{ content }}
+ 
+        <div class="clear"></div>
+  </div>
+</section>	
+	
+	
+	
+
+	
+	
+
+
+
+<!-- Footer -->
+
+  <footer>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>The contents of this website are <br />&copy;&nbsp;2018 under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE">MIT&nbsp;License</a>.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>
+		<a href="https://github.com/ealcos/" class="fa fa-github"></a>
+		<a href="https://linkedin.com/in/everettalcos/" class="fa fa-linkedin"></a>
+		<a href="https://twitter.com/everettalcos" class="fa fa-twitter"></a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\"></i>";
+    anchor.title = "Permalink";
+    return anchor;
+  };
+
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+
+</body>
+</html>
